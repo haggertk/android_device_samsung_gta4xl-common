@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020-2024 The LineageOS Project
+# Copyright (C) 2020-2025 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -159,7 +159,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
 ENABLE_VENDOR_RIL_SERVICE := true
 
 ## Security
-VENDOR_SECURITY_PATCH := 2024-05-01
+VENDOR_SECURITY_PATCH := 2024-11-01
 
 ## SELinux
 BOARD_SEPOLICY_TEE_FLAVOR := teegris

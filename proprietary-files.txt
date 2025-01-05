@@ -1,4 +1,4 @@
-# Common proprietary files - from Samsung package version P610XXS5FXE4, unless pinned
+# Common proprietary files - from Samsung package version P610XXS6FXJ1, unless pinned
 
 ## Audio
 vendor/etc/default_volume_tables.xml
@@ -18,9 +18,9 @@ vendor/firmware/calliope_iva.bin
 vendor/firmware/dax_param.bin
 
 ## Camera
--vendor/lib/hw/camera.exynos9611.so
+-vendor/lib/hw/camera.exynos9611.so;DISABLE_DEPS
 -vendor/lib/libexynoscamera_plugin.so
--vendor/lib64/hw/camera.exynos9611.so
+-vendor/lib64/hw/camera.exynos9611.so;DISABLE_DEPS
 -vendor/lib64/libexynoscamera_plugin.so
 
 ## Camera dependencies
@@ -74,20 +74,20 @@ vendor/etc/init/vendor.samsung.hardware.gnss@2.0-service.rc
 -vendor/lib64/egl/libGLES_mali.so;SYMLINK=vendor/lib64/libOpenCL.so;SYMLINK=vendor/lib64/libOpenCL.so.1;SYMLINK=vendor/lib64/libOpenCL.so.1.1;SYMLINK=vendor/lib64/hw/vulkan.universal9611.so
 
 ## Keymaster
--vendor/lib64/libkeymaster_helper.so
--vendor/lib64/libskeymaster4device.so
+-vendor/lib64/libkeymaster_helper.so;DISABLE_CHECKELF
+-vendor/lib64/libskeymaster4device.so;DISABLE_CHECKELF
 
 ## RIL - from a14 - A145FXXS5BXA1
--vendor/lib/libsecril-client.so;MODULE=libsecril-client.exynos9611|96bf65152d221ac528b763f625bb93e56899033d
--vendor/lib64/libsecril-client.so;MODULE=libsecril-client.exynos9611|26efd845750d4ad91e3a5c5dd7d95d40e8ef52a8
+-vendor/lib/libsecril-client.so;MODULE_SUFFIX=_exynos9611|96bf65152d221ac528b763f625bb93e56899033d
+-vendor/lib64/libsecril-client.so;MODULE_SUFFIX=_exynos9611|26efd845750d4ad91e3a5c5dd7d95d40e8ef52a8
 
 ## SECNATIVE
 -vendor/lib/libsecnativefeature.so
 -vendor/lib64/libsecnativefeature.so
 
 ## TEEGRIS
--vendor/bin/tzdaemon
--vendor/bin/tzts_daemon
+-vendor/bin/tzdaemon;DISABLE_DEPS
+-vendor/bin/tzts_daemon;DISABLE_DEPS
 vendor/etc/init/teegris.rc
 -vendor/lib/libuuid.so
 -vendor/lib/libteecl.so
@@ -99,7 +99,6 @@ vendor/etc/init/teegris.rc
 vendor/tee/00000000-0000-0000-0000-000000010081
 vendor/tee/00000000-0000-0000-0000-000000020081
 vendor/tee/00000000-0000-0000-0000-000048444350
-vendor/tee/00000000-0000-0000-0000-0050524f4341
 vendor/tee/00000000-0000-0000-0000-00575644524d
 vendor/tee/00000000-0000-0000-0000-42494f535542
 vendor/tee/00000000-0000-0000-0000-474154454b45
